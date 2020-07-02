@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		78287FA624AD3F9D00980B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78287FA524AD3F9D00980B63 /* AppDelegate.swift */; };
 		78287FA824AD3F9D00980B63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78287FA724AD3F9D00980B63 /* SceneDelegate.swift */; };
-		78287FAA24AD3F9D00980B63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78287FA924AD3F9D00980B63 /* ViewController.swift */; };
 		78287FAD24AD3F9D00980B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78287FAB24AD3F9D00980B63 /* Main.storyboard */; };
 		78287FAF24AD3FAD00980B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78287FAE24AD3FAD00980B63 /* Assets.xcassets */; };
 		78287FB224AD3FAD00980B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78287FB024AD3FAD00980B63 /* LaunchScreen.storyboard */; };
 		78287FBD24AD3FAF00980B63 /* SuperSenhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78287FBC24AD3FAF00980B63 /* SuperSenhaTests.swift */; };
 		78287FC824AD3FAF00980B63 /* SuperSenhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78287FC724AD3FAF00980B63 /* SuperSenhaUITests.swift */; };
+		7828801224AD4F0200980B63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828801124AD4F0200980B63 /* ViewController.swift */; };
+		7828801424AD5EC400980B63 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828801324AD5EC400980B63 /* SecurityTipsViewController.swift */; };
+		7828801624AD639700980B63 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828801524AD639700980B63 /* PasswordViewController.swift */; };
+		7828801824AD64E200980B63 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828801724AD64E100980B63 /* PasswordGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		78287FA224AD3F9D00980B63 /* SuperSenha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSenha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78287FA524AD3F9D00980B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78287FA724AD3F9D00980B63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78287FA924AD3F9D00980B63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78287FAC24AD3F9D00980B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78287FAE24AD3FAD00980B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78287FB124AD3FAD00980B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		78287FC324AD3FAF00980B63 /* SuperSenhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSenhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78287FC724AD3FAF00980B63 /* SuperSenhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaUITests.swift; sourceTree = "<group>"; };
 		78287FC924AD3FAF00980B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7828801124AD4F0200980B63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7828801324AD5EC400980B63 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
+		7828801524AD639700980B63 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		7828801724AD64E100980B63 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				78287FA524AD3F9D00980B63 /* AppDelegate.swift */,
 				78287FA724AD3F9D00980B63 /* SceneDelegate.swift */,
-				78287FA924AD3F9D00980B63 /* ViewController.swift */,
 				78287FAB24AD3F9D00980B63 /* Main.storyboard */,
 				78287FAE24AD3FAD00980B63 /* Assets.xcassets */,
 				78287FB024AD3FAD00980B63 /* LaunchScreen.storyboard */,
 				78287FB324AD3FAD00980B63 /* Info.plist */,
+				7828801124AD4F0200980B63 /* ViewController.swift */,
+				7828801324AD5EC400980B63 /* SecurityTipsViewController.swift */,
+				7828801524AD639700980B63 /* PasswordViewController.swift */,
+				7828801724AD64E100980B63 /* PasswordGenerator.swift */,
 			);
 			path = SuperSenha;
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78287FAA24AD3F9D00980B63 /* ViewController.swift in Sources */,
+				7828801424AD5EC400980B63 /* SecurityTipsViewController.swift in Sources */,
+				7828801624AD639700980B63 /* PasswordViewController.swift in Sources */,
+				7828801824AD64E200980B63 /* PasswordGenerator.swift in Sources */,
+				7828801224AD4F0200980B63 /* ViewController.swift in Sources */,
 				78287FA624AD3F9D00980B63 /* AppDelegate.swift in Sources */,
 				78287FA824AD3F9D00980B63 /* SceneDelegate.swift in Sources */,
 			);
@@ -443,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = d.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = d.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
