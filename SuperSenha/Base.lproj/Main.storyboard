@@ -52,6 +52,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gP-Nn-t3R">
                                 <rect key="frame" x="341" y="243.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="8mW-yt-s83"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar Números" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r68-5X-HkI">
                                 <rect key="frame" x="24" y="290" width="309" height="22"/>
@@ -62,6 +65,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o65-RC-9ii">
                                 <rect key="frame" x="341" y="285.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="FoU-eD-3yO"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar Letras Maiúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T55-6G-zub">
                                 <rect key="frame" x="24" y="332" width="309" height="22"/>
@@ -72,6 +78,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OUt-Oh-5Df">
                                 <rect key="frame" x="341" y="327.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="JNb-Fd-AJv"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar Caracteres Especiais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAv-be-vZd">
                                 <rect key="frame" x="24" y="374" width="309" height="22"/>
@@ -82,6 +91,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRq-p0-4Ug">
                                 <rect key="frame" x="341" y="369.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="cdn-P3-yvZ"/>
+                                </connections>
                             </switch>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="ahX-XT-obG">
                                 <rect key="frame" x="121" y="616" width="172.5" height="210"/>
@@ -146,6 +158,7 @@
                         <barButtonItem key="backBarButtonItem" title="Gerador de Senhas" id="ha6-U6-C2M"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btn" destination="Byc-Oc-jVd" id="bhh-qw-DBZ"/>
                         <outlet property="swCaptitalLetters" destination="OUt-Oh-5Df" id="rjH-C4-24v"/>
                         <outlet property="swLetters" destination="1gP-Nn-t3R" id="NGI-Ug-euO"/>
                         <outlet property="swNumbers" destination="o65-RC-9ii" id="NDm-pG-v0y"/>

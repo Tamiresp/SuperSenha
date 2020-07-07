@@ -17,10 +17,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var swCaptitalLetters: UISwitch!
     @IBOutlet weak var swSpecialCharacters: UISwitch!
 
+    @IBOutlet weak var btn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func change(_ sender: Any) {
+        if !swLetters.isOn && !swNumbers.isOn && !swCaptitalLetters.isOn && !swSpecialCharacters.isOn{
+            btn.isEnabled = false
+            btn.backgroundColor = UIColor.lightGray
+        } else {
+            btn.isEnabled = true
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passwordsViewController = segue.destination as! PasswordViewController
         
