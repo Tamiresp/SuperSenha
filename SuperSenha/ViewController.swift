@@ -33,6 +33,33 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func alertValues(_ sender: Any) {
+        let total:Int? = Int(tfTotalPasswords.text!)
+        let numbers:Int? = Int(tfNumberOfCharacters.text!)
+        
+        if total != nil {
+            if total == 0 ||  total! > 99 {
+                alert(text: "Valores não aceitáveis para a opção Quantidade de senhas: zero ou maior que 99")
+            }
+        }
+        
+        if numbers != nil {
+             if numbers == 0 || numbers! > 16 {
+                alert(text: "Valores não aceitáveis para a opção Total de caracteres: zero ou maior que 16")
+            }
+        }
+    }
+    
+    func alert(text: String){
+        let alert = UIAlertController(title:"Atenção", message: text, preferredStyle:UIAlertController.Style.alert )
+
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: {
+                _ in print("FOO ")
+        }))
+
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passwordsViewController = segue.destination as! PasswordViewController
         
